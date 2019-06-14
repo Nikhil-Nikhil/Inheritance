@@ -14,11 +14,8 @@ enum Gender {
 
 class Person: Display
 {
-    func Display() -> String
-    {
-        return "\(firstName!) \(lastName!)"
-        
-    }
+    
+    
     /*private var _id: Int
      var id: Int?
      {
@@ -55,7 +52,8 @@ class Person: Display
     var email: String?
     var birthdate: Date?
     
-    init() {
+    init()
+    {
         self.Id = 0
         self.firstName = String()
         self.lastName = String()
@@ -65,4 +63,8 @@ class Person: Display
         print("init() of Person")
         
     }
+    func Display() -> String {
+        return " Id: \(String(describing: Id))"+"\nfirstName : \(String(describing: firstName))"+"\nlastName : \(String(describing: lastName))"+"\nGender : \(Gender.self)"+"\nemail : \(String(describing: email))"    }
+    
+    
 }

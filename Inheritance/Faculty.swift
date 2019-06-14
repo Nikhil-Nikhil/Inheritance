@@ -7,7 +7,18 @@
 //
 
 import Foundation
-class faculty: Person
+
+enum department{
+    case Computer
+    case Mobile
+    case Madt
+}
+class Faculty: Person
 {
+    var salary : Float?
+    var department: String?
     
 }
+
+
+
